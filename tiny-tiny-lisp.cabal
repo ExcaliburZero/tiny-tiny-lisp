@@ -1,16 +1,16 @@
 name:                tiny-tiny-lisp
 version:             0.1.0
-synopsis:            Initial project template from stack
-description:         Please see README.md
-homepage:            https://github.com/ExcaliburZero/tiny-tiny-lisp#readme
+synopsis:            An interpreter for a small lisp dialect.
+description:         Tiny Tiny Lisp is a small implementation of an interpreter for a small lisp dialect.
+homepage:            https://github.com/ExcaliburZero/tiny-tiny-lisp
 license:             MIT
 license-file:        LICENSE
 author:              Christopher Wells
 maintainer:          cwellsny@nycap.rr.com
 copyright:           2016 Christopher Wells
-category:            Web
+category:            Interpreter
 build-type:          Simple
--- extra-source-files:
+extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
@@ -31,15 +31,6 @@ executable tiny-tiny-lisp
                      , haskeline
                      , parsec
                      , tiny-tiny-lisp
-  default-language:    Haskell2010
-
-test-suite tiny-tiny-lisp-test
-  type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
-  main-is:             Spec.hs
-  build-depends:       base
-                     , tiny-tiny-lisp
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
 source-repository head
